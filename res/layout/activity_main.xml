@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/etResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="16"
+        android:maxLength="24"
+        android:enabled="false"
+        android:maxLines="1" 
+        android:focusable="false"
+        />
+
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etResult"
+        android:layout_below="@+id/etResult"
+        android:layout_marginTop="52dp"
+        android:textSize="20sp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/num1"
+        android:layout_marginTop="23dp"
+         android:textSize="20sp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num4"
+        android:layout_below="@+id/num4"
+        android:layout_marginTop="26dp"
+         android:textSize="20sp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num7"
+        android:layout_below="@+id/num7"
+        android:layout_marginTop="26dp"
+        android:textSize="20sp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/chu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_alignLeft="@+id/cheng"
+        android:textSize="30sp"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num4"
+        android:layout_alignBottom="@+id/num4"
+        android:layout_alignLeft="@+id/num2"
+         android:textSize="20sp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num0"
+        android:layout_alignLeft="@+id/num5"
+         android:textSize="20sp"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/jian"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num7"
+        android:layout_alignLeft="@+id/plus"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num0"
+        android:layout_below="@+id/num0"
+        android:layout_marginTop="26dp"
+         android:textSize="40sp"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/equal"
+        android:layout_alignLeft="@+id/num9"
+        android:textSize="20sp"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num8"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_alignLeft="@+id/num6"
+        android:text="9"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num0"
+        android:layout_alignBottom="@+id/num0"
+        android:layout_alignLeft="@+id/num8"
+        android:text="."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num2"
+        android:layout_alignBottom="@+id/num2"
+        android:layout_toRightOf="@+id/num2"
+        android:text="3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num1"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_toRightOf="@+id/num1"
+        android:text="2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num7"
+        android:layout_alignLeft="@+id/num3"
+        android:text="6"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num3"
+        android:layout_alignBottom="@+id/num3"
+        android:layout_alignRight="@+id/etResult"
+        android:text="+"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/cheng"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num9"
+        android:layout_alignBottom="@+id/num9"
+        android:layout_alignLeft="@+id/jian"
+        android:text="*"
+        android:textSize="30sp" />
+
+</RelativeLayout>
